@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Sora&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Krona One", sans-serif;
+    font-family: "Sora", sans-serif;
+}
+.main {
+    transition: opacity 2s ease;
+}
+#loader > h1 {
+    animation: growAndGlow 1.5s infinite;
+}
+@keyframes growAndGlow {
+    from {
+        opacity: 0;
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+        animation-timing-function: ease-in-out;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.hide-scrollbar {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.1px;
+}
+
+::root {
+    -ms-overflow-style: none;
+    scrollbar-width: 0.1px;
+}
+.chevron {
+    transform: rotate(135deg);
+    vertical-align: top;
+}
+.scroll-down-btn:hover {
+    transform: translateY(2px);
+}
+.top-animation {
+    transform: translateY(0.6rem) translateX(-0.8rem) rotate(-45deg);
+    width: 100%;
+    transition: 400ms ease-in-out;
+}
+.mid-animation {
+    opacity: 0;
+    transition: 300ms ease-in-out;
+}
+.btm-animation {
+    transform: translateY(-0.5rem) rotate(45deg);
+    width: 100%;
+    transition: 400ms ease-in-out;
+}
+.border-animation {
+    transition: 200ms ease-in;
+}
+.close-menu {
+    display: none;
+}
+.open-menu {
+    height: 99vh;
+    display: block;
+}
+
+.hidden-left {
+    opacity: 0;
+}
+
+.feature-info {
+    transition: all 1.5s ease-in-out;
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../dist/output.css" />
+    </head>
+    <body class="font-Sora">
+        <div
+            class="flex justify-center items-center h-screen w-screen bg-primaryBg text-primaryText"
+            id="loader"
+        >
+            <h1
+                class="text-xl font-semibold tracking-wider lg:px-8 2xl:text-2xl"
+            >
+                SBT ARCHITECTS
+            </h1>
+        </div>
+        <div
+            class="main w-screen h-screen mx-auto bg-primaryBg text-primaryText 2xl:max-w-[1980px]"
+        >
+            <header class="fixed z-10 w-screen top-0 left-0">
+                <div class="flex p-4">
+                    <div class="relative lg:hidden">
+                        <button
+                            class="flex flex-col justify-between h-6 w-6 py-0.5"
+                            id="nav-btn"
+                        >
+                            <div
+                                class="w-1/2 h-0.5 ml-3 bg-primaryText"
+                                id="nav-btn__top"
+                            ></div>
+                            <div
+                                class="w-full h-0.5 bg-primaryText"
+                                id="nav-btn__mid"
+                            ></div>
+                            <div
+                                class="w-1/2 h-0.5 mr-3 bg-primaryText"
+                                id="nav-btn__btm"
+                            ></div>
+                        </button>
+                        <nav
+                            class="absolute top-6 -left-4 z-10 w-screen h-screen py-4 bg-primaryBg"
+                            id="dropdown-menu"
+                        >
+                            <ul>
+                                <li
+                                    class="py-4 text-center text-lg uppercase cursor-pointer"
+                                >
+                                    <a href="#home"> Home</a>
+                                </li>
+                                <li
+                                    class="py-4 text-center text-lg uppercase cursor-pointer"
+                                >
+                                    <a href="#projects"> Projects</a>
+                                </li>
+                                <li
+                                    class="py-4 text-center text-lg uppercase cursor-pointer"
+                                >
+                                    <a href="#about">About Us</a>
+                                </li>
+                                <li
+                                    class="py-4 text-center text-lg uppercase cursor-pointer"
+                                >
+                                    <a href="#contact">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div
+                        class="w-full m-auto text-center lg:flex lg:justify-center 2xl:text-lg"
+                    >
+                        <h2
+                            class="border-animation hidden px-4 tracking-wide cursor-pointer hover:border-b-primaryText hover:border-solid hover:border-b-2 lg:block"
+                        >
+                            <a href="#home"> Home</a>
+                        </h2>
+                        <h2
+                            class="border-animation hidden px-4 tracking-wide cursor-pointer hover:border-b-primaryText hover:border-solid hover:border-b-2 lg:block"
+                        >
+                            <a href="#projects"> Projects</a>
+                        </h2>
+                        <h1
+                            class="inline-block text-xl font-semibold tracking-wider lg:px-8 2xl:text-2xl"
+                        >
+                            SBT ARCHITECTS
+                        </h1>
+                        <h2
+                            class="border-animation hidden px-4 tracking-wide cursor-pointer hover:border-b-primaryText hover:border-solid hover:border-b-2 lg:block"
+                        >
+                            <a href="#about"> About Us</a>
+                        </h2>
+                        <h2
+                            class="border-animation hidden px-4 tracking-wide cursor-pointer hover:border-b-primaryText hover:border-solid hover:border-b-2 lg:block"
+                        >
+                            <a href="#contact"> Contact Us</a>
+                        </h2>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="h-screen pt-[3.75rem] md:p-[3.75rem]">
+                    <div class="relative h-full">
+                        <div class="h-full" id="slider-area">
+                            <div
+                                class="hide-scrollbar relative max-h-full overflow-x-hidden overflow-y-auto"
+                            >
+                                <div
+                                    class="relative slide flex justify-center items-center w-full"
+                                    id="home"
+                                >
+                                    <div
+                                        class="relative h-full w-full inline-block lg:w-auto lg:mx-auto"
+                                    >
+                                        <img
+                                            class="h-full my-auto max-w-none xl"
+                                            src="images/img-2.jpg"
+                                        />
+                                        <div
+                                            class="absolute top-[30%] left-4 p-4 space-y-8 text-left"
+                                        >
+                                            <p
+                                                class="text-primaryBg text-3xl leading-[2.25rem] w-3/4 md:text-4xl md:leading-[2.75rem] 2xl:text-6xl 2xl:leading-[4.5rem]"
+                                            >
+                                                The home to your architectural
+                                                and engineering solutions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="scroll-down-btn absolute flex flex-col items-center left-[50%] right-[50%] bottom-4 cursor-pointer"
+                                    >
+                                        <a href="#projects" class="text-center">
+                                            <span
+                                                class="text-primaryBg text-sm lg:text-md 2xl:text-lg"
+                                                >Scroll Down</span
+                                            >
+                                            <span
+                                                class="chevron inline-block h-4 -4 w-4 border-solid border-t-2 border-r-2"
+                                            ></span
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="featured-1 relative slide watch flex justify-center items-center w-full"
+                                    id="projects"
+                                >
+                                    <div
+                                        class="relative h-full w-full lg:inline-block lg:w-auto lg:mx-auto"
+                                    >
+                                        <img
+                                            class="h-full my-auto max-w-none lg:mx-auto"
+                                            src="images/img-1.jpg"
+                                        />
+                                        <div
+                                            class="feature-info absolute bottom-4 left-0 right-0 space-y-8"
+                                        >
+                                            <span
+                                                class="px-8 py-2 text-left bg-primaryText"
+                                            >
+                                                <h3
+                                                    class="inline-block text-primaryBg text-lg tracking-wide 2xl:text-xl"
+                                                >
+                                                    Knysna, Western Cape
+                                                </h3>
+                                            </span>
+                                            <div class="w-3/5 px-8 text-left">
+                                                <p
+                                                    class="inline-block text-primaryBg text-2xl font-bold tracking-wide"
+                                                >
+                                                    Residential property, family
+                                                    home
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="w-4/5 px-4 py-1 text-right bg-primaryText 2xl:w-3/5"
+                                            >
+                                                <a
+                                                    class="inline-block text-primaryBg text-xs font-semibold tracking-wide cursor-pointer 2xl:text-base"
+                                                >
+                                                    VIEW PROJECT
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="featured-2 slide watch relative flex justify-center items-center w-full"
+                                >
+                                    <div
+                                        class="relative h-full w-full lg:inline-block lg:w-auto lg:mx-auto"
+                                    >
+                                        <img
+                                            class="h-full my-auto max-w-none"
+                                            src="images/img-4.jpg"
+                                        />
+                                        <div
+                                            class="feature-info absolute bottom-4 left-0 right-0 space-y-8"
+                                        >
+                                            <span
+                                                class="px-8 py-2 text-left bg-primaryText"
+                                            >
+                                                <h3
+                                                    class="inline-block text-primaryBg text-lg tracking-wide 2xl:text-xl"
+                                                >
+                                                    iDutywa, Eastern Cape
+                                                </h3>
+                                            </span>
+                                            <div class="w-3/5 px-8 text-left">
+                                                <p
+                                                    class="inline-block text-primaryBg text-2xl font-bold tracking-wide"
+                                                >
+                                                    On the outskirts of the Wild
+                                                    Coast
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="w-4/5 px-4 py-1 text-right bg-primaryText 2xl:w-3/5"
+                                            >
+                                                <a
+                                                    class="inline-block text-primaryBg text-xs font-semibold tracking-wide cursor-pointer 2xl:text-base"
+                                                >
+                                                    VIEW PROJECT
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="featured-3 slide watch relative flex justify-center items-center w-full"
+                                >
+                                    <div
+                                        class="relative h-full w-full lg:inline-block lg:w-auto lg:mx-auto"
+                                    >
+                                        <img
+                                            class="h-full my-auto max-w-none"
+                                            src="images/img-3.jpg"
+                                        />
+                                        <div
+                                            class="feature-info absolute bottom-4 left-0 right-0 z-10 space-y-8"
+                                        >
+                                            <span
+                                                class="px-8 py-2 text-left bg-primaryText"
+                                            >
+                                                <h3
+                                                    class="inline-block text-primaryBg text-lg tracking-wide 2xl:text-xl"
+                                                >
+                                                    Sandton, Gauteng
+                                                </h3>
+                                            </span>
+                                            <div class="w-3/5 px-8 text-left">
+                                                <p
+                                                    class="inline-block text-primaryBg text-2xl font-bold tracking-wide"
+                                                >
+                                                    Organic commercial
+                                                    architecture
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="w-4/5 px-4 py-1 text-right bg-primaryText 2xl:w-3/5"
+                                            >
+                                                <a
+                                                    class="inline-block text-primaryBg text-xs font-semibold tracking-wide cursor-pointer 2xl:text-base"
+                                                >
+                                                    VIEW PROJECT
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="featured-4 slide watch relative flex justify-center items-center w-full"
+                                >
+                                    <div
+                                        class="relative h-full w-full lg:inline-block lg:w-auto lg:mx-auto"
+                                    >
+                                        <img
+                                            class="h-full my-auto max-w-none"
+                                            src="images/img-5.jpg"
+                                        />
+                                        <div
+                                            class="feature-info absolute bottom-4 left-0 right-0 z-10 space-y-8"
+                                        >
+                                            <span
+                                                class="px-8 py-2 text-left bg-primaryText"
+                                            >
+                                                <h3
+                                                    class="inline-block text-primaryBg text-lg tracking-wide 2xl:text-xl"
+                                                >
+                                                    Maseru, Lesotho
+                                                </h3>
+                                            </span>
+                                            <div class="w-3/5 px-8 text-left">
+                                                <p
+                                                    class="inline-block text-primaryBg text-2xl font-bold tracking-wide"
+                                                >
+                                                    In the majestic Maloti
+                                                    Mountains
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="w-4/5 px-4 py-1 text-right bg-primaryText 2xl:w-3/5"
+                                            >
+                                                <a
+                                                    class="inline-block text-primaryBg text-xs font-semibold tracking-wide cursor-pointer 2xl:text-base"
+                                                >
+                                                    VIEW PROJECT
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="p-12 space-y-8 max-w-[64rem] lg:mx-auto lg:text-center 2xl:text-lg"
+                                    id="about"
+                                >
+                                    <p>
+                                        SBT Architects is an established
+                                        award-winning design studio based in
+                                        East London, South Africa, founded in
+                                        2010.
+                                    </p>
+                                    <p>
+                                        The studio has expertise in a range of
+                                        sectors including residential,
+                                        commercial, hospitality and mixed-use
+                                        projects, delivering design servicesto a
+                                        range of projects across South Africa
+                                        and the rest of Africa. Our ethos is to
+                                        provide an intergrated and cohesive
+                                        approach to architecture in context
+                                        witht the environment.
+                                    </p>
+                                    <p>
+                                        SBT Architects provides an in-house
+                                        construction team which allows clients
+                                        to leverage on our expertise, ensuring
+                                        that quality and standards are
+                                        maintained through in-house
+                                        collaboration.
+                                    </p>
+                                </div>
+                                <div
+                                    class="flex flex-col p-12 space-y-8 max-w-[64rem] lg:space-y-0 lg:flex-row lg:justify-around lg:items-center lg:mx-auto lg:text-center"
+                                    id="contact"
+                                >
+                                    <div
+                                        class="p-4 space-y-2 text-primaryBg bg-primaryText"
+                                    >
+                                        <h4 class="pb-4 text-xl">
+                                            Company Info
+                                        </h4>
+                                        <span class="text-secondaryText text-sm"
+                                            >Address:</span
+                                        >
+                                        <p class="pb-4">
+                                            123 Circle Road<br />Square Hills<br />East
+                                            London<br />5247<br />
+                                        </p>
+                                        <span class="text-secondaryText text-sm"
+                                            >Email:</span
+                                        >
+                                        <p class="pb-4">
+                                            info@sbtarchitects.com
+                                        </p>
+                                        <span class="text-secondaryText text-sm"
+                                            >Contact No.</span
+                                        >
+                                        <p>012-345-6789</p>
+                                    </div>
+                                    <form
+                                        class="space-y-4 mt-0 mx-auto max-w-[768px] lg:mx-8 lg:max-w-none lg:h-full lg:flex lg:flex-col lg:justify-between"
+                                        id="form"
+                                    >
+                                        <h4 class="pb-4 text-xl">Contact Us</h4>
+                                        <label
+                                            class="block invisible h-0"
+                                            for="name"
+                                            >Name:</label
+                                        >
+                                        <input
+                                            class="w-full p-2 border border-solid border-primaryText text-secondaryText bg-primaryBg"
+                                            type="text"
+                                            id="name"
+                                            name="name"
+                                            placeholder="Name"
+                                            required
+                                        />
+                                        <label
+                                            class="block invisible h-0"
+                                            for="email"
+                                            >Email:</label
+                                        >
+                                        <input
+                                            class="w-full p-2 border border-solid border-primaryText text-secondaryText bg-primaryBg"
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            required
+                                        />
+                                        <label
+                                            class="block invisible h-0"
+                                            for="message"
+                                            >Message:</label
+                                        >
+                                        <textarea
+                                            class="w-full p-2 border border-solid border-primaryText text-secondaryText bg-primaryBg"
+                                            id="message"
+                                            name="message"
+                                            placeholder="Message"
+                                            required
+                                        ></textarea>
+                                        <button
+                                            class="w-full p-2 text-center bg-primaryText text-primaryBg"
+                                            type="submit"
+                                        >
+                                            Submit
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/main.js" async defer></script>
+    </body>
+</html>
