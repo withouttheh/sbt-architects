@@ -8,9 +8,11 @@
     font-family: "Sora", sans-serif;
 }
 .main {
+    display: none;
     transition: opacity 2s ease;
 }
 #loader > h1 {
+    display: block;
     animation: growAndGlow 1.5s infinite;
 }
 @keyframes growAndGlow {

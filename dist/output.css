@@ -502,8 +502,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -1rem;
 }
 
-.top-\[30\%\]{
-  top: 30%;
+.top-8{
+  top: 2rem;
 }
 
 .left-4{
@@ -866,10 +866,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .main {
+  display: none;
   transition: opacity 2s ease;
 }
 
 #loader > h1 {
+  display: block;
   -webkit-animation: growAndGlow 1.5s infinite;
           animation: growAndGlow 1.5s infinite;
 }

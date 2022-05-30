@@ -2,12 +2,11 @@
 const main = document.querySelector(".main");
 const loader = document.querySelector("#loader");
 const init = () => {
-    main.style.visibility = "hidden";
     main.style.opacity = 0;
-    loader.style.visibility = "visible";
     setTimeout(() => {
         loader.style.display = "none";
-        main.style.visibility = "visible";
+        main.style.display = "block";
+        setContentHeight();
         setTimeout(() => {
             main.style.opacity = 1;
         }, 50);
@@ -28,8 +27,6 @@ const setContentHeight = () => {
 };
 window.addEventListener("load", setContentHeight);
 window.addEventListener("resize", setContentHeight);
-console.log(window.innerHeight);
-console.log(window.innerWidth);
 
 // Dropdown
 
