@@ -26,21 +26,21 @@
                 <div class="flex p-4">
                     <div class="relative lg:hidden">
                         <button
-                            class="flex flex-col justify-between h-6 w-6 py-0.5"
                             id="nav-btn"
+                            class="hamburger relative block w-6 h-6 transition-all delay-400 cursor-pointer focus:outline-none md:hidden"
                         >
-                            <div
-                                class="w-1/2 h-0.5 ml-3 bg-primaryText"
+                            <span
                                 id="nav-btn__top"
-                            ></div>
-                            <div
-                                class="w-full h-0.5 bg-primaryText"
+                                class="nav-btn__top absolute top-0 left-0 w-6 h-0.5 bg-black rotate-0 transition-all delay-400"
+                            ></span>
+                            <span
                                 id="nav-btn__mid"
-                            ></div>
-                            <div
-                                class="w-1/2 h-0.5 mr-3 bg-primaryText"
+                                class="nav-btn__middle absolute top-0 left-0 w-6 h-0.5 bg-black rotate-0 translate-y-2 transition-all delay-400"
+                            ></span>
+                            <span
                                 id="nav-btn__btm"
-                            ></div>
+                                class="nav-btn__bottom absolute top-0 left-0 w-6 h-0.5 bg-black rotate-0 translate-y-4 transition-all delay-400"
+                            ></span>
                         </button>
                         <nav
                             class="absolute top-6 -left-4 z-10 w-screen h-screen py-4 bg-primaryBg"

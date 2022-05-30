@@ -49,6 +49,23 @@
 .scroll-down-btn:hover {
     transform: translateY(2px);
 }
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.top-animation {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.mid-animation {
+    opacity: 0;
+}
+.btm-animation {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+/* 
 .top-animation {
     transform: translateY(0.6rem) translateX(-0.8rem) rotate(-45deg);
     width: 100%;
@@ -62,7 +79,7 @@
     transform: translateY(-0.5rem) rotate(45deg);
     width: 100%;
     transition: 400ms ease-in-out;
-}
+} */
 .border-animation {
     transition: 200ms ease-in;
 }
