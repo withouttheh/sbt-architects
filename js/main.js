@@ -10,7 +10,7 @@ const init = () => {
         setTimeout(() => {
             main.style.opacity = 1;
         }, 50);
-    }, 8000);
+    }, 4000);
 };
 init();
 // Slide size
@@ -22,7 +22,6 @@ const setContentHeight = () => {
     let slideAreaHeight = sliderArea.offsetHeight;
     for (let slide of slides) {
         slide.style.height = `${slideAreaHeight}px`;
-        console.log(slide.style.height);
     }
 };
 window.addEventListener("load", setContentHeight);
@@ -75,7 +74,6 @@ const intersectionCallback = (entries) => {
     const curEntry = document.querySelector(`.${curEntryName}`);
 
     curEntry.firstElementChild.lastElementChild.classList.remove("hidden-left");
-    // observer.unobserve(entry.target);
 };
 
 let observer = new IntersectionObserver(intersectionCallback, options);
